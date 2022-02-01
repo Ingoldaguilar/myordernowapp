@@ -21,7 +21,7 @@ p {
 
 .container {
   width: 95%;
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -55,24 +55,35 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 5rem 0.5rem 5rem;
+  padding: 0 0 0.5rem 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5rem 0.3rem 5rem;
 }
 
 .avatar {
-  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  cursor: pointer;
 }
-
 .avatar img {
-  max-width: 8rem;
-  border-radius: 5rem;
-  padding: 0.3rem;
-  border: 4px solid #ff7f00;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.avatar i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2rem;
+  color: #ff7f00;
 }
 
 .tittle {
@@ -80,6 +91,11 @@ header {
   font-weight: 600;
   color: #495057;
   margin: 0;
+}
+
+.search {
+  display: inline-block;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
