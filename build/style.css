@@ -53,9 +53,25 @@ h3 {
   display: none;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.overlay picture {
+  display: block;
+  max-width: 80rem;
+}
+
 header {
   box-shadow: 0 5px 10px rgba(204, 204, 204, 0.31);
-  background-color: #fff;
   top: 0;
   left: 0;
   width: 100%;
@@ -103,8 +119,12 @@ header {
 }
 
 .container-modal {
+  background-color: #fff;
+  position: absolute;
+  top: 7rem;
   max-width: 95%;
-  width: 35rem;
+  width: 50rem;
+  height: 30rem;
   box-shadow: 0 5px 10px rgba(204, 204, 204, 0.9);
   border-radius: 1rem;
   margin: 0 auto;
