@@ -49,6 +49,10 @@ h3 {
   padding: 0;
 }
 
+.hide {
+  display: none;
+}
+
 header {
   box-shadow: 0 5px 10px rgba(204, 204, 204, 0.31);
   background-color: #fff;
@@ -96,6 +100,55 @@ header {
 .search {
   display: inline-block;
   width: 100%;
+}
+
+.container-modal {
+  max-width: 95%;
+  width: 35rem;
+  box-shadow: 0 5px 10px rgba(204, 204, 204, 0.9);
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.options-tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.options-tittle h2 {
+  margin: 0;
+  color: #495057;
+}
+.options-tittle i {
+  color: #495057;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+ul {
+  display: grid;
+}
+ul li {
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  color: #000;
+}
+ul li:hover {
+  cursor: pointer;
+  color: #ff7f00;
+}
+ul li:hover:last-child {
+  color: #b12626;
+}
+ul li i {
+  color: #ff7f00;
+  margin-right: 0.5rem;
+}
+
+.alert {
+  color: #b12626;
 }
 
 /*# sourceMappingURL=style.css.map */
