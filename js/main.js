@@ -9,7 +9,7 @@ let showBtn = document.querySelector('#show');
 
 showBtn.addEventListener('click', function () {
     modal.classList.remove('hide');
-    header.classList.add('hide');
+    header.classList.add('add');
     body.classList.add('overlay');
 })
 
