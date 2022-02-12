@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
+  height: 0%;
 }
 
 p {
@@ -70,11 +71,62 @@ h3 {
   max-width: 80rem;
 }
 
-header {
-  box-shadow: 0 5px 10px rgba(204, 204, 204, 0.31);
-  position: fixed;
+.fixed {
+  position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+}
+
+/* CSS */
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #ff7f00;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ff7f00;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #ff7f00;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+header {
+  box-shadow: 0 5px 10px rgba(204, 204, 204, 0.31);
+  position: relative;
   width: 100%;
   padding: 0.9rem 0 0.5rem 0;
 }
@@ -116,14 +168,29 @@ header {
 }
 
 .search {
-  display: inline-block;
-  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  max-width: 100%;
+  padding: 0 5rem 0.3rem 5rem;
+}
+@media screen and (max-width: 500px) {
+  .search {
+    padding: 0;
+  }
+}
+.search input {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(201, 197, 197, 0.9);
+}
+.search input:focus {
+  outline: 1px solid rgba(175, 172, 172, 0.9);
 }
 
 .container-modal {
   background-color: #fff;
   position: absolute;
-  top: 5rem;
+  top: 1rem;
   max-width: 95%;
   width: 50rem;
   height: 30rem;
@@ -179,6 +246,24 @@ ul li i {
 
 .alert {
   color: #b12626;
+}
+
+.main {
+  margin-top: 2rem;
+  max-width: 100%;
+  padding: 0 5rem 0.3rem 5rem;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    padding: 0;
+  }
+}
+
+.products-list-container {
+  display: grid;
+}
+.products-list-container .product {
+  margin: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

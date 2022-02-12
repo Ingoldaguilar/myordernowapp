@@ -1,22 +1,34 @@
-//dom
-let modal = document.querySelector('.modal');
-let body = document.querySelector('.body');
-let header = document.querySelector('#header');
+$(document).ready( function () {
+    
 
-//btns
-let closeBtn = document.querySelector('#close');
-let showBtn = document.querySelector('#show');
+    //variables
+    $avatar = $('#show');
+    $header = $('#header');
+    $search = $('#search');
+    $main = $('main');
+    $closeBtn = $('#close');
+    $modal = $('#modal');
+    $body = $('body');
 
-showBtn.addEventListener('click', function () {
-    modal.classList.remove('hide');
-    header.classList.add('add');
-    body.classList.add('overlay');
-})
+    //show modal
+    $avatar.click( function () {
+        $modal.fadeIn();
+        $body.addClass('overlay');
+        $avatar.addClass('hide');
+        $header.addClass('hide');
+        $main.addClass('hide');
+        $search.addClass('hide');
+    });
+
+    //hide modal
+    $closeBtn.click( function () {
+        $modal.hide();
+        $body.removeClass('overlay');
+        $avatar.removeClass('hide');
+        $header.removeClass('hide');
+        $main.removeClass('hide');
+        $search.removeClass('hide');
+    })
 
 
-closeBtn.addEventListener('click', function () {
-    modal.classList.add('hide');
-    header.classList.remove('hide');
-    body.classList.remove('overlay');
-})
-
+});
