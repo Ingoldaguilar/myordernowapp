@@ -221,25 +221,25 @@ header {
   cursor: pointer;
 }
 
-ul {
+.option-list {
   display: grid;
   padding: 0.3rem;
 }
-ul li {
+.option-list li {
   margin: 0.5rem;
   font-size: 1.8rem;
   color: #000;
   list-style: none;
   padding: 0.3rem 0;
 }
-ul li:hover {
+.option-list li:hover {
   cursor: pointer;
   color: #ff7f00;
 }
-ul li:hover:last-child {
+.option-list li:hover:last-child {
   color: #b12626;
 }
-ul li i {
+.option-list li i {
   color: #ff7f00;
   margin-right: 0.5rem;
 }
@@ -279,6 +279,41 @@ ul li i {
 }
 .products-list-container .product {
   margin: 1rem 0;
+  list-style: none;
+}
+
+.product-info h4 {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 300;
+  color: #495057;
+}
+.product-info p {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #495057;
+}
+.product-info i {
+  color: yellow;
+  margin-top: 1rem;
+}
+.product-info .product-info_offert {
+  display: flex;
+}
+.product-info .product-info_offert p {
+  background: #ff7f00;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 80px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#product-price {
+  font-size: 2rem;
+  color: #495057;
 }
 
 /*# sourceMappingURL=style.css.map */
