@@ -9,6 +9,7 @@ $(document).ready( function () {
     $closeBtn = $('#close');
     $modal = $('#modal');
     $body = $('body');
+    $bs = $('#bs');
 
     //show modal
     $avatar.click( function () {
@@ -18,6 +19,7 @@ $(document).ready( function () {
         $header.addClass('hide');
         $main.addClass('hide');
         $search.addClass('hide');
+        $bs.addClass('hide');
     });
 
     //hide modal
@@ -28,6 +30,7 @@ $(document).ready( function () {
         $header.removeClass('hide');
         $main.removeClass('hide');
         $search.removeClass('hide');
+        $bs.removeClass('hide');
     })
 
 
